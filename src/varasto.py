@@ -16,7 +16,7 @@ class Varasto:
             self.tilavuus=0
     # huom: ominaisuus voidaan myös laskea. Ei tarvita erillistä kenttää viela_tilaa tms.
     def paljonko_mahtuu(self):
-        return self.tilavuus - self.saldo
+        return self.tilavuus - self.saldo #sysmän aaria ja vammalan bluus tässä ja tämmöstä ja nääääääääääääääääääääääääääääääääääin
 
     def lisaa_varastoon(self, maara):
         if maara < 0:
