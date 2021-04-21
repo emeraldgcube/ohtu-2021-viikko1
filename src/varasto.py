@@ -6,10 +6,10 @@ class Varasto:
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
-        if alku_saldo <= tilavuus:
+        elif alku_saldo <= tilavuus:
             # mahtuu
             self.saldo = alku_saldo
-        self.tilavuus()
+        self.tilavuus_sopiva()
 
     def tilavuus_sopiva(self):
         if self.tilavuus<0:
